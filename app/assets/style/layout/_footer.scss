@@ -1,0 +1,172 @@
+.footer{
+  background: $primary;
+  padding-top: $spacer*6;
+  padding-bottom: $spacer*5;
+  @include pad{
+    padding: $spacer*4 0;
+  }
+  @include mobile{
+    padding-top: $spacer*3;
+    padding-bottom: $spacer*2;
+  }
+}
+
+.footer-content{
+  @include pad{
+    margin-bottom: $spacer*2.5;
+  }
+  @include mobile{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin-bottom: $spacer*3;
+  }
+}
+
+.footerMenu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include pad{
+    margin-bottom: $spacer*2.25;
+  }
+  @include mobile{
+    margin-bottom: 0;
+    align-items: flex-start;
+  }
+}
+
+.footerMenuList{
+  display: flex;
+  @include mobile{
+    display: none;
+  }
+  li{
+    &:first-child{
+      margin-left: -24px;
+      @include pad{
+        margin-left: -20px;
+      }
+    }
+  }
+  a{
+    color: $white;
+    display: block;
+    padding: $spacer*1.5 $spacer*3;
+    @include pad{
+      padding: 6px $spacer*2.5;
+    }
+    &:hover{
+      color: yellow;
+    }
+  }
+}
+
+.socialList{
+  display: flex;
+  margin-left: -32px;
+  @include pad{
+    margin-left: -24px;
+  }
+  li{
+    margin-left: $spacer*4;
+    @include pad{
+      margin-left: $spacer*3;
+    }
+  }
+  i{
+    color: $white;
+    font-size: $fs3-font;
+    &:hover{
+      color: yellow;
+    }
+    @include pad{
+      font-size: $fs6-font;
+    }
+  }
+}
+
+.infoList{
+  li{
+    display: flex;
+    align-items: center;
+    &:first-child{
+      margin-bottom: $spacer*2;
+      @include pad{
+        margin-bottom: $spacer*1.5;
+      }
+      @include mobile{
+        margin-bottom: 6px;
+      }
+    }
+  }
+  .info-img{
+    width: 48px;
+    margin-right: $spacer*2;
+    @include pad{
+      width: 24px;
+      margin-right: $spacer;
+    }
+    @include mobile{
+      width: 20px;
+      margin-right: $spacer/2;
+    }
+  }
+  a{
+    color: $white;
+    @include pad{
+      font-size: $fs7-font;
+    }
+    @include mobile{
+      font-size: $font-base;
+    }
+    &:hover{
+      color:yellow;
+    }
+  }
+}
+
+.copyright{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $white;
+  padding-top: $spacer*4;
+  border-top: 1px solid $white;
+  @include pad{
+    padding-top: $spacer*3;
+  }
+  @include mobile{
+    padding-top: $spacer*2;
+    display: block;
+    p{
+      font-size: $fs8-font;
+      margin-bottom: $spacer;
+    }
+  }
+  .privacyList{
+    display: flex;
+    @include mobile{
+      display: block;
+    }
+    li{
+      margin-left: $spacer*6;
+      @include pad{
+        margin-left: $spacer*3;
+      }
+      @include mobile{
+        margin-left: 0;
+        margin-bottom: $spacer;
+      }
+    }
+    a{
+      color: $white;
+      @include pad{
+        font-size: $fs8-font;
+      }
+      &:hover{
+        color: yellow;
+      }
+    }
+  }
+}

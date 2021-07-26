@@ -1,23 +1,16 @@
-$color: #00cc99;
+@import url('https://fonts.google.com/specimen/Roboto?query=roboto');
+@import url('https://fonts.google.com/specimen/Noto+Sans?query=san');
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
+@import './variable';
+@import './mixin';
+@import './reset';
 
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
+@import './util';
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}
+@import './layout/header';
+@import './layout/footer';
+
+@import './components/form';
+
+@import './page/index';
+@import './page/product';

@@ -1,0 +1,320 @@
+.index-banner{
+  background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png') no-repeat;
+  height: calc(100vh - 109px);
+  @include pad{
+    background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-sm.png');
+    background-size: cover;
+    background-position: center;
+  }
+  @include mobile{
+    height: 394px;
+  }
+}
+
+.banner{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.title{
+  color: $secondary;
+  text-align: end;
+  @include pad{
+    h2{
+      font-size: $fs3-font;
+    }
+    p{
+      font-size: $fs7-font;
+    }
+  }
+  @include mobile{
+    h2{
+      font-size: $fs5-font;
+    }
+    p{
+      font-size: $font-base;
+    }
+  }
+}
+
+.feature{
+  background: $bg-color;
+  @include pad{
+    padding-top: $spacer*5;
+    padding-bottom: $spacer*3;
+    margin-bottom: $spacer*5;
+  }
+  @include mobile{
+    padding-top: $spacer*4;
+    padding-bottom: $spacer;
+    margin-bottom: $spacer*4;
+  }
+  h3{
+    color: $secondary;
+    @include pad{
+      font-size: $fs5-font;
+      margin-bottom: $spacer*4;
+    }
+    @include mobile{
+      font-size: $fs6-font;
+    }
+  }
+}
+
+.featureList{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  li{
+    width: 23%;
+    @include pad{
+      width: 45%;
+      margin-bottom: $spacer*4;
+    }
+    @include mobile{
+      width: 80%;
+      margin: 0 auto $spacer*4 auto;
+    }
+  }
+  .feature-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+  }
+  h4{
+    color: $secondary;
+    font-weight: bold;
+  }
+}
+
+.classic{
+  h3{
+    margin-bottom: $spacer*5;
+    color: $secondary;
+    @include pad{
+      font-size: $fs5-font;
+      margin-bottom: $spacer*4;
+    }
+    @include mobile{
+      font-size: $fs7-font;
+      margin-bottom: $spacer*1.25;
+    }
+  }
+}
+
+.classicList{
+  @include pad{
+    margin-bottom: $spacer*7;
+  }
+  li{
+    display: flex;
+    @include pad{
+      margin-bottom: $spacer;
+    }
+    @include mobile{
+      width: 100%;
+      position: relative;
+    }
+  }
+  .classic-img{
+    margin-right: 30px;
+    width: 57%;
+    @include mobile{
+      width: 100%;
+      margin-right: 0;
+    }
+    img{
+      width: 100%;
+    }
+  }
+  .classic-reverse{
+    flex-direction: row-reverse;
+    margin-right: 30px;
+    @include pad{
+      flex-direction: row;
+      margin-right: 0;
+    }
+    .classic-img{
+      margin-right: 0;
+      margin-left: 30px;
+      @include pad{
+        margin-left: 0;
+        margin-right: 30px;
+      }
+      @include mobile{
+        margin-right: 0;
+      }
+    }
+  }
+  h4{
+    color: $primary;
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    img{
+      margin-right: 10px;
+    }
+    @include pad{
+      font-size: $font-base*1.75;
+    }
+    @include mobile{
+      @include position-center;
+    }
+  }
+}
+
+.joint{
+  background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/bg.png') no-repeat;
+  background-position: 0 center;
+  @include pad{
+    padding-top: $spacer*5;
+    padding-bottom: $spacer*7;
+    margin-bottom: $spacer*5;
+  }
+  @include mobile{
+    padding-top: $spacer*4;
+    padding-bottom: $spacer*3;
+    margin-bottom: $spacer*4;
+  }
+  h3{
+    color: $white;
+    @include pad{
+      font-size: $fs5-font;
+      margin-bottom: $spacer*4;
+    }
+    @include mobile{
+      font-size: $fs7-font;
+      margin-bottom: $spacer*2.5;
+    }
+  }
+}
+
+.jointList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  li{
+    width: 48%;
+    position: relative;
+    @include mobile{
+      width: 100%;
+      margin-bottom: $spacer*2;
+    }
+    h3{
+      @include position-center;
+      color: $primary;
+      font-weight: bold;
+      background: rgba($white, .5);
+      @include pad{
+        font-size: $fs5-font;
+      }
+    }
+  }
+}
+
+.recommand{
+  @include pad{
+    margin-bottom: $spacer*3;
+  }
+  h3{
+    color: $secondary;
+    @include pad{
+      font-size: $fs5-font;
+      margin-bottom: $spacer*4;
+    }
+    @include mobile{
+      font-size: $fs7-font;
+      margin-bottom: $spacer*2.5;
+    }
+  }
+}
+
+.recommandList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  li{
+    width: 23%;
+    border-radius: 4px;
+    box-shadow: 0px 2px 6px #00000029;
+    @include pad{
+      width: 48%;
+      margin-bottom: $spacer*4;
+    }
+    @include mobile{
+      width: 100%;
+      margin-bottom: $spacer*2;
+    }
+  }
+  .recommand-img{
+    img{
+      border-radius: 4px 4px 0 0;
+      width: 100%;
+    }
+  }
+  .recommand-content{
+    color: $content;
+    padding: $spacer*2;
+    height: 204px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include pad{
+      padding-left: $spacer*3;
+      padding-right: $spacer*3;
+    }
+  }
+  .name{
+    display: block;
+  }
+  .date{
+    color: $gray;
+  }
+}
+
+.contact{
+  background: $bg-color;
+  padding-bottom: $spacer*12;
+  @include pad{
+    padding-top: $spacer*5;
+    padding-bottom: 66px;
+  }
+  @include mobile{
+    padding-top: $spacer*3.75;
+    padding-bottom: $spacer*5;
+  }
+  h3{
+    @include pad{
+      font-size: $fs5-font;
+      margin-bottom: $spacer*3;
+    }
+    @include mobile{
+      font-size: $fs7-font;
+      margin-bottom: $spacer*2.5;
+    }
+  }
+  p{
+    margin-bottom: $spacer*2.5;
+    @include pad{
+      font-size: $font-base;
+      margin-bottom: $spacer*2;
+    }
+    @include mobile{
+      margin-bottom: $spacer;
+    }
+  }
+}
+
+.contact-content{
+  width: 60%;
+  margin: 0 auto;
+  @include pad{
+    width: 80%;
+  }
+  @include mobile{
+    width: 100%;
+  }
+}

@@ -1,0 +1,45 @@
+.form{
+  input, textarea{
+    width: 100%;
+    padding: 14px $spacer*2;
+    @include pad{
+      padding: $spacer 12px;
+    }
+  }
+  @include pad{
+    .form-control{
+      margin-bottom: $spacer;
+    }
+  }
+  label{
+    margin-bottom: $spacer/2;
+    @include pad{
+      font-size: $fs8-font;
+    }
+  }
+  .agree{
+    input{
+      width: auto;
+      font-size: $fs8-font;
+    }
+  }
+  .submitBtn{
+    background: $primary;
+    color: $white;
+    padding: $spacer*2 143px;
+    border: 0;
+    margin-top: $spacer*5;
+    @include pad{
+      margin-top: $spacer*2.5;
+      padding: 10px 77px;
+      font-size: $fs8-font;
+    }
+    @include mobile{
+      padding: $spacer 55px;
+    }
+    &:hover{
+      cursor: pointer;
+      background: $secondary;
+    }
+  }
+}

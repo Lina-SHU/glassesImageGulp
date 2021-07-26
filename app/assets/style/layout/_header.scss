@@ -1,0 +1,79 @@
+.header{
+  background: $primary;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 $spacer*11;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  @include pad{
+    padding: 0 $spacer*5;
+  }
+  @include mobile{
+    padding: 0;
+    h1{
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+    }
+  }
+}
+
+.logo{
+  display: inline-block;
+  background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png') no-repeat;
+  background-size: cover;
+  width: 80px;
+  height: 49px;
+  @include logo;
+  @include mobile{
+    width: 48px;
+    height: 30px;
+  }
+}
+
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  @include mobile{
+    width: 100%;
+  }
+  li{
+    &:last-child{
+      margin-right: -32px;
+    }
+    @include pad{
+      &:last-child{
+        margin-right: -20px;
+      }
+    }
+    @include mobile{
+      width: 50%;
+      border-top: 1px solid $white;
+      &:nth-child(odd){
+        border-right: 1px solid $white;
+      }
+    }
+  }
+  
+  a{
+    display: block;
+    color: $white;
+    font-size: $fs7-font;
+    padding: $spacer*5 $spacer*4;
+    text-align: center;
+    &:hover{
+      background: $secondary;
+    }
+    @include pad{
+      padding-left: $spacer*2.5;
+      padding-right: $spacer*2.5;
+    }
+    @include mobile{
+      padding: $spacer 0;
+    }
+  }
+}
