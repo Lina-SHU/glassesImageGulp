@@ -19,7 +19,7 @@
 }
 
 .title{
-  color: $secondary;
+  color: $primary-dark;
   text-align: end;
   @include pad{
     h2{
@@ -52,7 +52,7 @@
     margin-bottom: $spacer*4;
   }
   h3{
-    color: $secondary;
+    color: $primary-dark;
     @include pad{
       font-size: $fs5-font;
       margin-bottom: $spacer*4;
@@ -85,7 +85,7 @@
     height: 100px;
   }
   h4{
-    color: $secondary;
+    color: $primary-dark;
     font-weight: bold;
   }
 }
@@ -93,7 +93,7 @@
 .classic{
   h3{
     margin-bottom: $spacer*5;
-    color: $secondary;
+    color: $primary-dark;
     @include pad{
       font-size: $fs5-font;
       margin-bottom: $spacer*4;
@@ -220,7 +220,7 @@
     margin-bottom: $spacer*3;
   }
   h3{
-    color: $secondary;
+    color: $primary-dark;
     @include pad{
       font-size: $fs5-font;
       margin-bottom: $spacer*4;

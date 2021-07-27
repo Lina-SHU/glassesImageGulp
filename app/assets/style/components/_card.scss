@@ -1,0 +1,57 @@
+.location-card{
+  border: 1px solid #00000020;
+  .card-img{
+    height: 224px;
+    overflow: hidden;
+    @include pad{
+      height: 164px;
+    }
+  }
+}
+
+.card-body{
+  color: $content;
+  h3{
+    padding: $spacer*1.5 $spacer*3;
+    border-bottom: 1px solid #00000020;
+    @include pad{
+      padding: $spacer $spacer*2;
+      font-size: $font-base;
+    }
+    @include mobile{
+      padding: $spacer $spacer*3;
+    }
+  }
+  .cardList{
+    padding: $spacer*2 $spacer*3;
+    li{
+      font-size: $fs7-font;
+      @include pad{
+        font-size: $fs8-font;
+      }
+    }
+    .card-icon{
+      display: inline-block;
+      width: 24px;
+      margin-right: $spacer;
+      @include pad{
+        width: 20px;
+      }
+    }
+  }
+}
+
+.detailBtn{
+  background: $black;
+  color: $white;
+  display: block;
+  width: 100%;
+  padding: $spacer*2.5 0;
+  @include pad{
+    font-size: $fs8-font;
+    padding: $spacer*2 0;
+  }
+  &:hover{
+    background: $primary-dark;
+  }
+}

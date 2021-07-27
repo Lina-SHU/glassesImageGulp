@@ -1,0 +1,67 @@
+.faq{
+  padding-top: $spacer*12;
+  padding-bottom: $spacer*20;
+  @include pad{
+    padding-top: $spacer*7.5;
+    padding-bottom: $spacer*9;
+  }
+  @include mobile{
+    padding-top: $spacer*3.5;
+    padding-bottom: $spacer*4.5;
+  }
+  h2{
+    @include title;
+  }
+  h3{
+    font-size: $fs5-font;
+    margin-bottom: $spacer*4.5;
+    @include pad{
+      margin-bottom: $spacer*4;
+    }
+    @include mobile{
+      font-size: $fs7-font;
+      margin-bottom: $spacer*3;
+    }
+  }
+}
+
+.faqList{
+  li{
+    @include pad{
+      margin-bottom: $spacer*3;
+    }
+    @include mobile{
+      margin-bottom: $spacer*2.5;
+    }
+  }
+  h4{
+    font-weight: bold;
+    @include pad{
+      font-size: $fs7-font;
+    }
+    @include mobile{
+      margin-bottom: $spacer;
+    }
+  }
+  span{
+    display: block;
+    @include mobile{
+      display: inline;
+    }
+  }
+  p{
+    width: 83%;
+    margin: 0 auto;
+    @include pad{
+      width: 93%;
+      margin-right: 0;
+    }
+    @include mobile{
+      width: 100%;
+      margin-left: 0;
+      &:last-child{
+        margin-top: $spacer*3;
+      }
+    }
+  }
+}

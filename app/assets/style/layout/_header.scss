@@ -66,7 +66,7 @@
     padding: $spacer*5 $spacer*4;
     text-align: center;
     &:hover{
-      background: $secondary;
+      background: $primary-dark;
     }
     @include pad{
       padding-left: $spacer*2.5;
