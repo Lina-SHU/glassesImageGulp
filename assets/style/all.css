@@ -1,5 +1,5 @@
-@import url("https://fonts.google.com/specimen/Roboto?query=roboto");
-@import url("https://fonts.google.com/specimen/Noto+Sans?query=san");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -21,7 +21,6 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
@@ -57,11 +56,11 @@ img {
   height: auto; }
 
 body {
-  font-family: 'Roboto', 'Noto Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Roboto", sans-serif, "Noto Sans TC", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   padding-top: 109px; }
-  @media (max-width: 676px) {
+  @media (max-width: 767px) {
     body {
       padding-top: 150px; } }
 
@@ -80,7 +79,7 @@ select:focus, input:focus, textarea:focus {
     .container {
       padding-left: 40px;
       padding-right: 40px; } }
-  @media (max-width: 676px) {
+  @media (max-width: 767px) {
     .container {
       padding-left: 15px;
       padding-right: 15px; } }
@@ -178,7 +177,7 @@ select:focus, input:focus, textarea:focus {
   @media (max-width: 992px) {
     .header {
       padding: 0 40px; } }
-  @media (max-width: 676px) {
+  @media (max-width: 767px) {
     .header {
       padding: 0; }
       .header h1 {
@@ -195,7 +194,7 @@ select:focus, input:focus, textarea:focus {
   text-indent: 101%;
   white-space: nowrap;
   overflow: hidden; }
-  @media (max-width: 676px) {
+  @media (max-width: 767px) {
     .logo {
       width: 48px;
       height: 30px; } }
@@ -206,7 +205,7 @@ select:focus, input:focus, textarea:focus {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  @media (max-width: 676px) {
+  @media (max-width: 767px) {
     .menu {
       width: 100%; } }
   .menu li:last-child {
@@ -214,7 +213,7 @@ select:focus, input:focus, textarea:focus {
   @media (max-width: 992px) {
     .menu li:last-child {
       margin-right: -20px; } }
-  @media (max-width: 676px) {
+  @media (max-width: 767px) {
     .menu li {
       width: 50%;
       border-top: 1px solid #fff; }
@@ -232,7 +231,7 @@ select:focus, input:focus, textarea:focus {
       .menu a {
         padding-left: 20px;
         padding-right: 20px; } }
-    @media (max-width: 676px) {
+    @media (max-width: 767px) {
       .menu a {
         padding: 8px 0; } }
 
@@ -243,7 +242,7 @@ select:focus, input:focus, textarea:focus {
   @media (max-width: 992px) {
     .footer {
       padding: 32px 0; } }
-  @media (max-width: 676px) {
+  @media (max-width: 767px) {
     .footer {
       padding-top: 24px;
       padding-bottom: 16px; } }
@@ -252,7 +251,7 @@ select:focus, input:focus, textarea:focus {
   .footer-content {
     margin-bottom: 20px; } }
 
-@media (max-width: 676px) {
+@media (max-width: 767px) {
   .footer-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -279,7 +278,7 @@ select:focus, input:focus, textarea:focus {
   @media (max-width: 992px) {
     .footerMenu {
       margin-bottom: 18px; } }
-  @media (max-width: 676px) {
+  @media (max-width: 767px) {
     .footerMenu {
       margin-bottom: 0;
       -webkit-box-align: start;
@@ -290,7 +289,7 @@ select:focus, input:focus, textarea:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  @media (max-width: 676px) {
+  @media (max-width: 767px) {
     .footerMenuList {
       display: none; } }
   .footerMenuList li:first-child {
@@ -342,7 +341,7 @@ select:focus, input:focus, textarea:focus {
     @media (max-width: 992px) {
       .infoList li:first-child {
         margin-bottom: 12px; } }
-    @media (max-width: 676px) {
+    @media (max-width: 767px) {
       .infoList li:first-child {
         margin-bottom: 6px; } }
 
@@ -353,7 +352,7 @@ select:focus, input:focus, textarea:focus {
     .infoList .info-img {
       width: 24px;
       margin-right: 8px; } }
-  @media (max-width: 676px) {
+  @media (max-width: 767px) {
     .infoList .info-img {
       width: 20px;
       margin-right: 4px; } }
@@ -363,7 +362,7 @@ select:focus, input:focus, textarea:focus {
   @media (max-width: 992px) {
     .infoList a {
       font-size: 1.25rem; } }
-  @media (max-width: 676px) {
+  @media (max-width: 767px) {
     .infoList a {
       font-size: 1rem; } }
   .infoList a:hover {
@@ -385,7 +384,7 @@ select:focus, input:focus, textarea:focus {
   @media (max-width: 992px) {
     .copyright {
       padding-top: 24px; } }
-  @media (max-width: 676px) {
+  @media (max-width: 767px) {
     .copyright {
       padding-top: 16px;
       display: block; }
@@ -396,7 +395,7 @@ select:focus, input:focus, textarea:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    @media (max-width: 676px) {
+    @media (max-width: 767px) {
       .copyright .privacyList {
         display: block; } }
     .copyright .privacyList li {
@@ -404,7 +403,7 @@ select:focus, input:focus, textarea:focus {
       @media (max-width: 992px) {
         .copyright .privacyList li {
           margin-left: 24px; } }
-      @media (max-width: 676px) {
+      @media (max-width: 767px) {
         .copyright .privacyList li {
           margin-left: 0;
           margin-bottom: 8px; } }
@@ -448,11 +447,95 @@ select:focus, input:focus, textarea:focus {
       margin-top: 20px;
       padding: 10px 77px;
       font-size: 0.875rem; } }
-  @media (max-width: 676px) {
+  @media (max-width: 767px) {
     .form .submitBtn {
       padding: 8px 55px; } }
   .form .submitBtn:hover {
     cursor: pointer;
+    background: #650300; }
+
+.form-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (max-width: 992px) {
+    .form-select {
+      margin-bottom: 24px; } }
+  @media (max-width: 767px) {
+    .form-select {
+      margin-bottom: 20px; } }
+  .form-select label {
+    margin-right: 20px; }
+    @media (max-width: 992px) {
+      .form-select label {
+        font-size: 1rem; } }
+    @media (max-width: 767px) {
+      .form-select label {
+        font-size: 0.875rem;
+        width: 20%;
+        margin-right: 12px; } }
+  .form-select select {
+    padding: 8px 16px;
+    width: 30%;
+    font-size: 18px; }
+    @media (max-width: 992px) {
+      .form-select select {
+        font-size: 1rem; } }
+    @media (max-width: 767px) {
+      .form-select select {
+        font-size: 0.875rem;
+        width: 80%; } }
+
+.location-card {
+  border: 1px solid #00000020; }
+  .location-card .card-img {
+    height: 224px;
+    overflow: hidden; }
+    @media (max-width: 992px) {
+      .location-card .card-img {
+        height: 164px; } }
+
+.card-body {
+  color: #212529; }
+  .card-body h3 {
+    padding: 12px 24px;
+    border-bottom: 1px solid #00000020; }
+    @media (max-width: 992px) {
+      .card-body h3 {
+        padding: 8px 16px;
+        font-size: 1rem; } }
+    @media (max-width: 767px) {
+      .card-body h3 {
+        padding: 8px 24px; } }
+  .card-body .cardList {
+    padding: 16px 24px; }
+    .card-body .cardList li {
+      font-size: 1.25rem; }
+      @media (max-width: 992px) {
+        .card-body .cardList li {
+          font-size: 0.875rem; } }
+    .card-body .cardList .card-icon {
+      display: inline-block;
+      width: 24px;
+      margin-right: 8px; }
+      @media (max-width: 992px) {
+        .card-body .cardList .card-icon {
+          width: 20px; } }
+
+.detailBtn {
+  background: #000;
+  color: #fff;
+  display: block;
+  width: 100%;
+  padding: 20px 0; }
+  @media (max-width: 992px) {
+    .detailBtn {
+      font-size: 0.875rem;
+      padding: 16px 0; } }
+  .detailBtn:hover {
     background: #650300; }
 
 .index-banner {
@@ -463,7 +546,7 @@ select:focus, input:focus, textarea:focus {
       background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-sm.png");
       background-size: cover;
       background-position: center; } }
-  @media (max-width: 676px) {
+  @media (max-width: 767px) {
     .index-banner {
       height: 394px; } }
 
@@ -487,7 +570,7 @@ select:focus, input:focus, textarea:focus {
       font-size: 3rem; }
     .title p {
       font-size: 1.25rem; } }
-  @media (max-width: 676px) {
+  @media (max-width: 767px) {
     .title h2 {
       font-size: 2rem; }
     .title p {
@@ -500,7 +583,7 @@ select:focus, input:focus, textarea:focus {
       padding-top: 40px;
       padding-bottom: 24px;
       margin-bottom: 40px; } }
-  @media (max-width: 676px) {
+  @media (max-width: 767px) {
     .feature {
       padding-top: 32px;
       padding-bottom: 8px;
@@ -511,7 +594,7 @@ select:focus, input:focus, textarea:focus {
       .feature h3 {
         font-size: 2rem;
         margin-bottom: 32px; } }
-    @media (max-width: 676px) {
+    @media (max-width: 767px) {
       .feature h3 {
         font-size: 1.5rem; } }
 
@@ -530,7 +613,7 @@ select:focus, input:focus, textarea:focus {
       .featureList li {
         width: 45%;
         margin-bottom: 32px; } }
-    @media (max-width: 676px) {
+    @media (max-width: 767px) {
       .featureList li {
         width: 80%;
         margin: 0 auto 32px auto; } }
@@ -556,7 +639,7 @@ select:focus, input:focus, textarea:focus {
     .classic h3 {
       font-size: 2rem;
       margin-bottom: 32px; } }
-  @media (max-width: 676px) {
+  @media (max-width: 767px) {
     .classic h3 {
       font-size: 1.25rem;
       margin-bottom: 10px; } }
@@ -572,7 +655,7 @@ select:focus, input:focus, textarea:focus {
   @media (max-width: 992px) {
     .classicList li {
       margin-bottom: 8px; } }
-  @media (max-width: 676px) {
+  @media (max-width: 767px) {
     .classicList li {
       width: 100%;
       position: relative; } }
@@ -580,7 +663,7 @@ select:focus, input:focus, textarea:focus {
 .classicList .classic-img {
   margin-right: 30px;
   width: 57%; }
-  @media (max-width: 676px) {
+  @media (max-width: 767px) {
     .classicList .classic-img {
       width: 100%;
       margin-right: 0; } }
@@ -607,7 +690,7 @@ select:focus, input:focus, textarea:focus {
       .classicList .classic-reverse .classic-img {
         margin-left: 0;
         margin-right: 30px; } }
-    @media (max-width: 676px) {
+    @media (max-width: 767px) {
       .classicList .classic-reverse .classic-img {
         margin-right: 0; } }
 
@@ -625,7 +708,7 @@ select:focus, input:focus, textarea:focus {
   @media (max-width: 992px) {
     .classicList h4 {
       font-size: 1.75rem; } }
-  @media (max-width: 676px) {
+  @media (max-width: 767px) {
     .classicList h4 {
       position: absolute;
       top: 0;
@@ -650,7 +733,7 @@ select:focus, input:focus, textarea:focus {
       padding-top: 40px;
       padding-bottom: 56px;
       margin-bottom: 40px; } }
-  @media (max-width: 676px) {
+  @media (max-width: 767px) {
     .joint {
       padding-top: 32px;
       padding-bottom: 24px;
@@ -661,7 +744,7 @@ select:focus, input:focus, textarea:focus {
       .joint h3 {
         font-size: 2rem;
         margin-bottom: 32px; } }
-    @media (max-width: 676px) {
+    @media (max-width: 767px) {
       .joint h3 {
         font-size: 1.25rem;
         margin-bottom: 20px; } }
@@ -678,7 +761,7 @@ select:focus, input:focus, textarea:focus {
   .jointList li {
     width: 48%;
     position: relative; }
-    @media (max-width: 676px) {
+    @media (max-width: 767px) {
       .jointList li {
         width: 100%;
         margin-bottom: 16px; } }
@@ -714,7 +797,7 @@ select:focus, input:focus, textarea:focus {
     .recommand h3 {
       font-size: 2rem;
       margin-bottom: 32px; } }
-  @media (max-width: 676px) {
+  @media (max-width: 767px) {
     .recommand h3 {
       font-size: 1.25rem;
       margin-bottom: 20px; } }
@@ -737,7 +820,7 @@ select:focus, input:focus, textarea:focus {
       .recommandList li {
         width: 48%;
         margin-bottom: 32px; } }
-    @media (max-width: 676px) {
+    @media (max-width: 767px) {
       .recommandList li {
         width: 100%;
         margin-bottom: 16px; } }
@@ -774,7 +857,7 @@ select:focus, input:focus, textarea:focus {
     .contact {
       padding-top: 40px;
       padding-bottom: 66px; } }
-  @media (max-width: 676px) {
+  @media (max-width: 767px) {
     .contact {
       padding-top: 30px;
       padding-bottom: 40px; } }
@@ -782,7 +865,7 @@ select:focus, input:focus, textarea:focus {
     .contact h3 {
       font-size: 2rem;
       margin-bottom: 24px; } }
-  @media (max-width: 676px) {
+  @media (max-width: 767px) {
     .contact h3 {
       font-size: 1.25rem;
       margin-bottom: 20px; } }
@@ -792,7 +875,7 @@ select:focus, input:focus, textarea:focus {
       .contact p {
         font-size: 1rem;
         margin-bottom: 16px; } }
-    @media (max-width: 676px) {
+    @media (max-width: 767px) {
       .contact p {
         margin-bottom: 8px; } }
 
@@ -802,8 +885,135 @@ select:focus, input:focus, textarea:focus {
   @media (max-width: 992px) {
     .contact-content {
       width: 80%; } }
-  @media (max-width: 676px) {
+  @media (max-width: 767px) {
     .contact-content {
       width: 100%; } }
+
+.location {
+  padding-top: 96px;
+  padding-bottom: 128px; }
+  @media (max-width: 992px) {
+    .location {
+      padding-top: 60px;
+      padding-bottom: 36px; } }
+  @media (max-width: 767px) {
+    .location {
+      padding-top: 28px;
+      padding-bottom: 40px; } }
+  .location h2 {
+    padding-left: 16px;
+    border-left: 8px solid #AA0601;
+    font-weight: bold; }
+    @media (max-width: 992px) {
+      .location h2 {
+        font-size: 3rem;
+        border-left: 4px solid #AA0601;
+        margin-bottom: 40px; } }
+    @media (max-width: 767px) {
+      .location h2 {
+        font-size: 1.75rem;
+        padding-left: 8px;
+        margin-bottom: 24px; } }
+
+.locationList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .locationList > li {
+    width: 32%;
+    margin-bottom: 32px; }
+    @media (max-width: 992px) {
+      .locationList > li {
+        width: 48%;
+        margin-bottom: 20px; } }
+    @media (max-width: 767px) {
+      .locationList > li {
+        width: 100%;
+        margin-bottom: 16px; } }
+    .locationList > li:last-child {
+      margin-right: auto;
+      margin-left: 2%; }
+      @media (max-width: 992px) {
+        .locationList > li:last-child {
+          margin-right: 0;
+          margin-left: 0; } }
+
+.faq {
+  padding-top: 96px;
+  padding-bottom: 160px; }
+  @media (max-width: 992px) {
+    .faq {
+      padding-top: 60px;
+      padding-bottom: 72px; } }
+  @media (max-width: 767px) {
+    .faq {
+      padding-top: 28px;
+      padding-bottom: 36px; } }
+  .faq h2 {
+    padding-left: 16px;
+    border-left: 8px solid #AA0601;
+    font-weight: bold; }
+    @media (max-width: 992px) {
+      .faq h2 {
+        font-size: 3rem;
+        border-left: 4px solid #AA0601;
+        margin-bottom: 40px; } }
+    @media (max-width: 767px) {
+      .faq h2 {
+        font-size: 1.75rem;
+        padding-left: 8px;
+        margin-bottom: 24px; } }
+  .faq h3 {
+    font-size: 2rem;
+    margin-bottom: 36px; }
+    @media (max-width: 992px) {
+      .faq h3 {
+        margin-bottom: 32px; } }
+    @media (max-width: 767px) {
+      .faq h3 {
+        font-size: 1.25rem;
+        margin-bottom: 24px; } }
+
+@media (max-width: 992px) {
+  .faqList li {
+    margin-bottom: 24px; } }
+
+@media (max-width: 767px) {
+  .faqList li {
+    margin-bottom: 20px; } }
+
+.faqList h4 {
+  font-weight: bold; }
+  @media (max-width: 992px) {
+    .faqList h4 {
+      font-size: 1.25rem; } }
+  @media (max-width: 767px) {
+    .faqList h4 {
+      margin-bottom: 8px; } }
+
+.faqList span {
+  display: block; }
+  @media (max-width: 767px) {
+    .faqList span {
+      display: inline; } }
+
+.faqList p {
+  width: 83%;
+  margin: 0 auto; }
+  @media (max-width: 992px) {
+    .faqList p {
+      width: 93%;
+      margin-right: 0; } }
+  @media (max-width: 767px) {
+    .faqList p {
+      width: 100%;
+      margin-left: 0; }
+      .faqList p:last-child {
+        margin-top: 24px; } }
 
 /*# sourceMappingURL=all.css.map */
