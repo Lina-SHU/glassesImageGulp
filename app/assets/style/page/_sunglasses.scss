@@ -1,0 +1,49 @@
+.sunglassesBanner{
+  li{
+    &:first-child{
+      background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-3.png') no-repeat center;
+      background-size: cover;
+    }
+    &:last-child{
+      background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-2-color.png') no-repeat center;
+      background-size: cover;
+    }
+  }
+}
+
+.sunglasses{
+  padding-bottom: $spacer*7;
+  @include pad{
+    padding-bottom: $spacer*3;
+  }
+  @include mobile{
+    padding-bottom: $spacer*7;
+  }
+  .pagination{
+    display: none;
+    @include mobile{
+      display: flex;
+    }
+  }
+}
+
+.sunglassesList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include mobile{
+    margin-bottom: $spacer;
+  }
+  >li{
+    width: 32%;
+    margin-bottom: $spacer*13;
+    @include pad{
+      width: 48%;
+      margin-bottom: $spacer*9;
+    }
+    @include mobile{
+      width: 100%;
+      margin-bottom: $spacer*4;
+    }
+  }
+}

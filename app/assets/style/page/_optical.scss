@@ -1,4 +1,4 @@
-.optionMenu{
+.productMenu{
   display: flex;
   li{
     width: 33.3333%;
@@ -69,7 +69,7 @@
   }
 }
 
-.optical{
+.product{
   padding-top: $spacer*10;
   padding-bottom: $spacer*20;
   @include pad{
