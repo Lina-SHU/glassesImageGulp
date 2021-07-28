@@ -943,6 +943,95 @@ select:focus, input:focus, textarea:focus {
           margin-right: 0;
           margin-left: 0; } }
 
+.store {
+  padding-top: 96px;
+  padding-bottom: 128px; }
+  @media (max-width: 992px) {
+    .store {
+      padding-top: 60px;
+      padding-bottom: 96px; } }
+  @media (max-width: 767px) {
+    .store {
+      padding-top: 28px;
+      padding-bottom: 56px; } }
+  .store h2 {
+    padding-left: 16px;
+    border-left: 8px solid #AA0601;
+    font-weight: bold; }
+    @media (max-width: 992px) {
+      .store h2 {
+        font-size: 3rem;
+        border-left: 4px solid #AA0601;
+        margin-bottom: 40px; } }
+    @media (max-width: 767px) {
+      .store h2 {
+        font-size: 1.75rem;
+        padding-left: 8px;
+        margin-bottom: 24px; } }
+
+.storeDetail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+@media (max-width: 992px) {
+  .store-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 0; }
+    .store-card .card-img {
+      width: 48%; }
+    .store-card .card-body {
+      width: 48%;
+      border: 1px solid #00000021; } }
+
+@media (max-width: 767px) {
+  .store-card {
+    display: block; }
+    .store-card .card-img {
+      width: 100%; }
+    .store-card .card-body {
+      width: 100%; } }
+
+.store-content {
+  width: 40%; }
+  @media (max-width: 992px) {
+    .store-content {
+      width: 100%;
+      margin-bottom: 32px; } }
+  @media (max-width: 767px) {
+    .store-content {
+      margin-bottom: 16px; } }
+
+.store-img {
+  width: 57%; }
+  @media (max-width: 992px) {
+    .store-img {
+      width: 100%; } }
+  .store-img iframe {
+    width: 100%;
+    height: 100%; }
+    @media (max-width: 992px) {
+      .store-img iframe {
+        height: 442px; } }
+    @media (max-width: 767px) {
+      .store-img iframe {
+        height: 211px; } }
+
 .faq {
   padding-top: 96px;
   padding-bottom: 160px; }
