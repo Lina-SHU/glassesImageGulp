@@ -1,3 +1,4 @@
+/* location card */
 .location-card{
   border: 1px solid #00000020;
   .card-img{
@@ -41,17 +42,39 @@
   }
 }
 
-.detailBtn{
-  background: $black;
-  color: $white;
-  display: block;
-  width: 100%;
-  padding: $spacer*2.5 0;
-  @include pad{
-    font-size: $fs8-font;
-    padding: $spacer*2 0;
+/* product card */
+.product-card{
+  .card-img{
+    height: 164px;
+    overflow: hidden;
+    @include mobile{
+      height: 166px;
+    }
+    img{
+      width: 100%;
+    }
   }
-  &:hover{
-    background: $primary-dark;
+  .card-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+      color: $primary;
+    }
+  }
+  .colorList{
+    display: flex;
+    li{
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      margin-right: $spacer;
+      &:first-child{
+        background: #5F3E2D;
+      }
+      &:last-child{
+        background: #B75929;
+      }
+    }
   }
 }

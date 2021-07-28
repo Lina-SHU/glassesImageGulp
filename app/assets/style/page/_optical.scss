@@ -1,0 +1,128 @@
+.optionMenu{
+  display: flex;
+  li{
+    width: 33.3333%;
+    text-align: center;
+    &:first-child{
+      border-left: 1px solid $gray;
+      margin-left: -1px;
+    }
+  }
+  .active{
+    border-bottom: 8px solid $primary;
+    @include mobile {
+      border-bottom: 4px solid $primary;
+    }
+  }
+  a{
+    display: block;
+    font-size: $fs5-font;
+    color: $black;
+    height: 96px;
+    padding-top: $spacer*3;
+    border-right: 1px solid $gray;
+    &:hover{
+      border-bottom: 8px solid $primary;
+      @include mobile{
+        border-bottom: 4px solid $primary;
+      }
+    }
+    @include pad{
+      font-size: $fs6-font;
+      height: 60px;
+      padding-top: 14px;
+    }
+    @include mobile{
+      font-size: $fs8-font;
+      padding-top: 5px;
+      height: 30px;
+    }
+  }
+  img{
+    @include pad{
+      width: 32px;
+      height: 32px;
+    }
+    @include mobile{
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.bannerList{
+  display: flex;
+  height: 304px;
+  @include mobile{
+    height: 148px;
+  }
+  li{
+    width: 50%;
+    &:first-child{
+      background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-1.png') no-repeat center;
+      background-size: cover;
+    }
+    &:last-child{
+      background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-2.png') no-repeat center;
+      background-size: cover;
+    }
+  }
+}
+
+.optical{
+  padding-top: $spacer*10;
+  padding-bottom: $spacer*20;
+  @include pad{
+    padding-top: $spacer*7;
+    padding-bottom: $spacer*12;
+  }
+  @include mobile{
+    padding-top: $spacer*4;
+    padding-bottom: $spacer*7;
+  }
+  h2{
+    font-size: $font-base*2.625;
+    @include pad{
+      font-size: $fs5-font;
+    }
+    @include mobile{
+      font-size: $fs7-font;
+    }
+  }
+  h3{
+    font-size: $fs5-font;
+    @include pad{
+      font-size: $fs6-font;
+      margin-bottom: $spacer*4;
+    }
+    @include mobile{
+      font-size: $font-base;
+      margin-bottom: $spacer*2.5;
+    }
+  }
+}
+
+.opticalList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -5px;
+  @include pad{
+    margin-bottom: -7px;
+  }
+  @include mobile{
+    margin-bottom: 8px;
+  }
+  >li{
+    width: 23%;
+    margin-bottom: $spacer*13;
+    @include pad{
+      width: 48%;
+      margin-bottom: $spacer*9;
+    }
+    @include mobile{
+      width: 100%;
+      margin-bottom: $spacer*4;
+    }
+  }
+}

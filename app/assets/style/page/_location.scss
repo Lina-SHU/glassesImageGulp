@@ -37,6 +37,19 @@
         margin-left: 0;
       }
     }
-    
+  }
+  .detailBtn{
+    background: $black;
+    color: $white;
+    display: block;
+    width: 100%;
+    padding: $spacer*2.5 0;
+    @include pad{
+      font-size: $fs8-font;
+      padding: $spacer*2 0;
+    }
+    &:hover{
+      background: $primary-dark;
+    }
   }
 }
