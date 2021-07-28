@@ -1,0 +1,75 @@
+.store{
+  padding-top: $spacer*12;
+  padding-bottom: $spacer*16;
+  @include pad{
+    padding-top: $spacer*7.5;
+    padding-bottom: $spacer*12;
+  }
+  @include mobile{
+    padding-top: $spacer*3.5;
+    padding-bottom: $spacer*7;
+  }
+  h2{
+    @include title;
+  }
+}
+
+.storeDetail{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.store-card{
+  @include pad{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 0;
+    .card-img{
+      width: 48%;
+    }
+    .card-body{
+      width: 48%;
+      border: 1px solid #00000021;
+    }
+  }
+  @include mobile{
+    display: block;
+    .card-img{
+      width: 100%;
+    }
+    .card-body{
+      width: 100%;
+    }
+  }
+}
+
+.store-content{
+  width: 40%;
+  @include pad{
+    width: 100%;
+    margin-bottom: $spacer*4;
+  }
+  @include mobile{
+    margin-bottom: $spacer*2;
+  }
+}
+
+.store-img{
+  width: 57%;
+  @include pad{
+    width: 100%;
+  }
+  iframe{
+    width: 100%;
+    height: 100%;
+    @include pad{
+      height: 442px;
+    }
+    @include mobile{
+      height: 211px;
+    }
+  }
+}

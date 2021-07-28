@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 @import './variable';
-@import './mixin';
 @import './reset';
+@import './mixin';
+@import './base';
 
 @import './util';
 
@@ -16,4 +17,5 @@
 @import './page/index';
 @import './page/product';
 @import './page/location';
+@import './page/store';
 @import './page/faq';
