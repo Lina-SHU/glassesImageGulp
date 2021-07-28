@@ -964,49 +964,49 @@ select:focus, input:focus, textarea:focus {
     .contact-content {
       width: 100%; } }
 
-.optionMenu {
+.productMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .optionMenu li {
+  .productMenu li {
     width: 33.3333%;
     text-align: center; }
-    .optionMenu li:first-child {
+    .productMenu li:first-child {
       border-left: 1px solid #707070;
       margin-left: -1px; }
-  .optionMenu .active {
+  .productMenu .active {
     border-bottom: 8px solid #AA0601; }
     @media (max-width: 767px) {
-      .optionMenu .active {
+      .productMenu .active {
         border-bottom: 4px solid #AA0601; } }
-  .optionMenu a {
+  .productMenu a {
     display: block;
     font-size: 2rem;
     color: #000;
     height: 96px;
     padding-top: 24px;
     border-right: 1px solid #707070; }
-    .optionMenu a:hover {
+    .productMenu a:hover {
       border-bottom: 8px solid #AA0601; }
       @media (max-width: 767px) {
-        .optionMenu a:hover {
+        .productMenu a:hover {
           border-bottom: 4px solid #AA0601; } }
     @media (max-width: 992px) {
-      .optionMenu a {
+      .productMenu a {
         font-size: 1.5rem;
         height: 60px;
         padding-top: 14px; } }
     @media (max-width: 767px) {
-      .optionMenu a {
+      .productMenu a {
         font-size: 0.875rem;
         padding-top: 5px;
         height: 30px; } }
   @media (max-width: 992px) {
-    .optionMenu img {
+    .productMenu img {
       width: 32px;
       height: 32px; } }
   @media (max-width: 767px) {
-    .optionMenu img {
+    .productMenu img {
       width: 16px;
       height: 16px; } }
 
@@ -1027,33 +1027,33 @@ select:focus, input:focus, textarea:focus {
       background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-2.png") no-repeat center;
       background-size: cover; }
 
-.optical {
+.product {
   padding-top: 80px;
   padding-bottom: 160px; }
   @media (max-width: 992px) {
-    .optical {
+    .product {
       padding-top: 56px;
       padding-bottom: 96px; } }
   @media (max-width: 767px) {
-    .optical {
+    .product {
       padding-top: 32px;
       padding-bottom: 56px; } }
-  .optical h2 {
+  .product h2 {
     font-size: 2.625rem; }
     @media (max-width: 992px) {
-      .optical h2 {
+      .product h2 {
         font-size: 2rem; } }
     @media (max-width: 767px) {
-      .optical h2 {
+      .product h2 {
         font-size: 1.25rem; } }
-  .optical h3 {
+  .product h3 {
     font-size: 2rem; }
     @media (max-width: 992px) {
-      .optical h3 {
+      .product h3 {
         font-size: 1.5rem;
         margin-bottom: 32px; } }
     @media (max-width: 767px) {
-      .optical h3 {
+      .product h3 {
         font-size: 1rem;
         margin-bottom: 20px; } }
 
@@ -1082,6 +1082,54 @@ select:focus, input:focus, textarea:focus {
         margin-bottom: 72px; } }
     @media (max-width: 767px) {
       .opticalList > li {
+        width: 100%;
+        margin-bottom: 32px; } }
+
+.sunglassesBanner li:first-child {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-3.png") no-repeat center;
+  background-size: cover; }
+
+.sunglassesBanner li:last-child {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-2-color.png") no-repeat center;
+  background-size: cover; }
+
+.sunglasses {
+  padding-bottom: 56px; }
+  @media (max-width: 992px) {
+    .sunglasses {
+      padding-bottom: 24px; } }
+  @media (max-width: 767px) {
+    .sunglasses {
+      padding-bottom: 56px; } }
+  .sunglasses .pagination {
+    display: none; }
+    @media (max-width: 767px) {
+      .sunglasses .pagination {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
+
+.sunglassesList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 767px) {
+    .sunglassesList {
+      margin-bottom: 8px; } }
+  .sunglassesList > li {
+    width: 32%;
+    margin-bottom: 104px; }
+    @media (max-width: 992px) {
+      .sunglassesList > li {
+        width: 48%;
+        margin-bottom: 72px; } }
+    @media (max-width: 767px) {
+      .sunglassesList > li {
         width: 100%;
         margin-bottom: 32px; } }
 
