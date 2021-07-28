@@ -489,6 +489,7 @@ select:focus, input:focus, textarea:focus {
         font-size: 0.875rem;
         width: 80%; } }
 
+/* location card */
 .location-card {
   border: 1px solid #00000020; }
   .location-card .card-img {
@@ -525,18 +526,42 @@ select:focus, input:focus, textarea:focus {
         .card-body .cardList .card-icon {
           width: 20px; } }
 
-.detailBtn {
-  background: #000;
-  color: #fff;
-  display: block;
-  width: 100%;
-  padding: 20px 0; }
-  @media (max-width: 992px) {
-    .detailBtn {
-      font-size: 0.875rem;
-      padding: 16px 0; } }
-  .detailBtn:hover {
-    background: #650300; }
+/* product card */
+.product-card .card-img {
+  height: 164px;
+  overflow: hidden; }
+  @media (max-width: 767px) {
+    .product-card .card-img {
+      height: 166px; } }
+  .product-card .card-img img {
+    width: 100%; }
+
+.product-card .card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .product-card .card-content p {
+    color: #AA0601; }
+
+.product-card .colorList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .product-card .colorList li {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    margin-right: 8px; }
+    .product-card .colorList li:first-child {
+      background: #5F3E2D; }
+    .product-card .colorList li:last-child {
+      background: #B75929; }
 
 .pagination {
   display: -webkit-box;
@@ -939,6 +964,127 @@ select:focus, input:focus, textarea:focus {
     .contact-content {
       width: 100%; } }
 
+.optionMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .optionMenu li {
+    width: 33.3333%;
+    text-align: center; }
+    .optionMenu li:first-child {
+      border-left: 1px solid #707070;
+      margin-left: -1px; }
+  .optionMenu .active {
+    border-bottom: 8px solid #AA0601; }
+    @media (max-width: 767px) {
+      .optionMenu .active {
+        border-bottom: 4px solid #AA0601; } }
+  .optionMenu a {
+    display: block;
+    font-size: 2rem;
+    color: #000;
+    height: 96px;
+    padding-top: 24px;
+    border-right: 1px solid #707070; }
+    .optionMenu a:hover {
+      border-bottom: 8px solid #AA0601; }
+      @media (max-width: 767px) {
+        .optionMenu a:hover {
+          border-bottom: 4px solid #AA0601; } }
+    @media (max-width: 992px) {
+      .optionMenu a {
+        font-size: 1.5rem;
+        height: 60px;
+        padding-top: 14px; } }
+    @media (max-width: 767px) {
+      .optionMenu a {
+        font-size: 0.875rem;
+        padding-top: 5px;
+        height: 30px; } }
+  @media (max-width: 992px) {
+    .optionMenu img {
+      width: 32px;
+      height: 32px; } }
+  @media (max-width: 767px) {
+    .optionMenu img {
+      width: 16px;
+      height: 16px; } }
+
+.bannerList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 304px; }
+  @media (max-width: 767px) {
+    .bannerList {
+      height: 148px; } }
+  .bannerList li {
+    width: 50%; }
+    .bannerList li:first-child {
+      background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-1.png") no-repeat center;
+      background-size: cover; }
+    .bannerList li:last-child {
+      background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-2.png") no-repeat center;
+      background-size: cover; }
+
+.optical {
+  padding-top: 80px;
+  padding-bottom: 160px; }
+  @media (max-width: 992px) {
+    .optical {
+      padding-top: 56px;
+      padding-bottom: 96px; } }
+  @media (max-width: 767px) {
+    .optical {
+      padding-top: 32px;
+      padding-bottom: 56px; } }
+  .optical h2 {
+    font-size: 2.625rem; }
+    @media (max-width: 992px) {
+      .optical h2 {
+        font-size: 2rem; } }
+    @media (max-width: 767px) {
+      .optical h2 {
+        font-size: 1.25rem; } }
+  .optical h3 {
+    font-size: 2rem; }
+    @media (max-width: 992px) {
+      .optical h3 {
+        font-size: 1.5rem;
+        margin-bottom: 32px; } }
+    @media (max-width: 767px) {
+      .optical h3 {
+        font-size: 1rem;
+        margin-bottom: 20px; } }
+
+.opticalList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: -5px; }
+  @media (max-width: 992px) {
+    .opticalList {
+      margin-bottom: -7px; } }
+  @media (max-width: 767px) {
+    .opticalList {
+      margin-bottom: 8px; } }
+  .opticalList > li {
+    width: 23%;
+    margin-bottom: 104px; }
+    @media (max-width: 992px) {
+      .opticalList > li {
+        width: 48%;
+        margin-bottom: 72px; } }
+    @media (max-width: 767px) {
+      .opticalList > li {
+        width: 100%;
+        margin-bottom: 32px; } }
+
 .location {
   padding-top: 96px;
   padding-bottom: 128px; }
@@ -992,6 +1138,18 @@ select:focus, input:focus, textarea:focus {
         .locationList > li:last-child {
           margin-right: 0;
           margin-left: 0; } }
+  .locationList .detailBtn {
+    background: #000;
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 20px 0; }
+    @media (max-width: 992px) {
+      .locationList .detailBtn {
+        font-size: 0.875rem;
+        padding: 16px 0; } }
+    .locationList .detailBtn:hover {
+      background: #650300; }
 
 .store {
   padding-top: 96px;
