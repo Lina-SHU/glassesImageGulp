@@ -1,0 +1,36 @@
+.pagination{
+  display: flex;
+  justify-content: center;
+  li{
+    border-top: 1px solid $black-light;
+    border-bottom: 1px solid $black-light;
+    border-right: 1px solid $black-light;
+    &:first-child{
+      border-left: 1px solid $black-light;
+    }
+  }
+  a{
+    display: block;
+    padding: $spacer*1.5 $spacer*2;
+    font-size: $font-base*1.125;
+    color: $black-light;
+    @include mobile{
+      font-size: $fs8-font;
+      padding: $spacer*1.5 $spacer*1.75;
+    }
+    &:hover{
+      background: $black;
+      color: $white;
+    }
+  }
+  .pre-page, .next-page{
+    padding: $spacer*1.5 $spacer*1.5;
+  }
+  .next-page{
+    background: $bg-color;
+  }
+  .active{
+    background: $black;
+    color: $white;
+  }
+}
