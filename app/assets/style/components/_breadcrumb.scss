@@ -1,0 +1,21 @@
+.breadcrumb{
+  display: flex;
+  li{
+    &:first-child{
+      margin-left: -4px;
+    }
+    @include pad{
+      font-size: $fs8-font;
+    }
+  }
+  a{
+    margin: 0 $spacer/2;
+    color: $black;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  .active{
+    color: $primary;
+  }
+}

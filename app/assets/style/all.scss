@@ -5,6 +5,7 @@
 @import './reset';
 @import './mixin';
 @import './base';
+@import './layout';
 
 @import './util';
 
@@ -14,10 +15,12 @@
 @import './components/form';
 @import './components/card';
 @import './components/pagination';
+@import './components/breadcrumb';
 
 @import './page/index';
 @import './page/product';
 @import './page/location';
 @import './page/store';
 @import './page/blog';
+@import './page/article';
 @import './page/faq';

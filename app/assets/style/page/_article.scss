@@ -1,0 +1,246 @@
+.article{
+  padding-bottom: $spacer*20;
+  @include pad{
+    padding-bottom: $spacer*12;
+  }
+  @include mobile{
+    padding-bottom: $spacer*7;
+  }
+}
+.article-nav{
+  @include mobile{
+    display: block;
+    .blog-search{
+      display: none;
+    }
+    .blogMenuList{
+      width: 100%;
+      justify-content: space-between;
+      li{
+        &:first-child{
+          margin-left: -8px;
+        }
+        &:last-child{
+          margin-right: -8px;
+        }
+      }
+      a{
+        padding-left: $spacer;
+        padding-right: $spacer;
+      }
+    }
+  }
+}
+
+.tagList{
+  display: flex;
+  flex-wrap: wrap;
+  li{
+    color: $primary;
+    margin-right: $spacer*2;
+    font-weight: bold;
+    @include pad{
+      margin-right: $spacer;
+      font-size: $font-base;
+    }
+    @include mobile{
+      font-size: $fs8-font;
+      margin-right: $spacer/2;
+    }
+  }
+}
+
+.articleDetail{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .article-content{
+    width: 74%;
+    @include pad{
+      h2{
+        font-size: $fs5-font;
+        margin-bottom: $spacer/2;
+        @include mobile{
+          font-size: $fs7-font;
+          margin-bottom: 0;
+        }
+      }
+    }
+    @include mobile{
+      width: 100%;
+      margin-bottom: $spacer*3.75;
+    }
+  }
+  .subtitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mobile{
+      margin-bottom: $spacer*2.5;
+    }
+    h3{
+      font-size: $font-base*1.75;
+      @include mobile{
+        font-size: $fs8-font;
+      }
+    }
+    .date{
+      color:#6C6C6C;
+      @include pad{
+        font-size: $fs8-font;
+      }
+    }
+  }
+  .article-tags{
+    width: 23%;
+    @include mobile{
+      width: 100%;
+    }
+    h3{
+      color: $primary;
+      display: flex;
+      align-items: center;
+      font-size: $font-base*1.75;
+      @include pad{
+        font-size: $fs7-font;
+      }
+      img{
+        margin-right: $spacer;
+        @include pad{
+          width: 24px;
+        }
+      }
+    }
+    li{
+      margin-right: $spacer*3;
+      @include pad{
+        margin-right: $spacer*2;
+        font-size: $font-base;
+      }
+      @include mobile{
+        margin-right: $spacer;
+      }
+    }
+  }
+}
+
+.contents{
+  @include pad{
+    margin-bottom: $spacer*3.75;
+  }
+  @include mobile{
+    margin-bottom: $spacer*2.5;
+  }
+  li{
+    @include pad{
+      margin-bottom: $spacer*3;
+    }
+  }
+  p{
+    color: #0A0A0A;
+    @include pad{
+      font-size: $font-base;
+    }
+    span{
+      display: block;
+      @include mobile{
+        display: inline;
+      }
+    }
+  }
+  .conclusion{
+    margin-top: $spacer*4;
+    @include pad{
+      margin-top: $spacer*3;
+    }
+  }
+}
+
+.content-img{
+  overflow: hidden;
+  @include pad{
+    margin-bottom: $spacer*2;
+  }
+  img{
+    width: 100%;
+  }
+}
+
+.share{
+  display: flex;
+  margin-bottom: $spacer*2.5;
+  @include mobile{
+    margin-bottom: $spacer*2;
+  }
+  a{
+    display: block;
+    color: $black;
+  }
+  >a{
+    margin-right: $spacer*2.5;
+    @include pad{
+      margin-right: $spacer*2;
+    }
+    &:hover{
+      text-decoration: underline;
+    } 
+  }
+}
+
+.soical{
+  display: flex;
+  li{
+    margin-right: $spacer*2;
+  }
+  i{
+    font-size: $fs6-font;
+    &:hover{
+      color: $primary;
+    } 
+  }
+}
+
+.changePage{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: $spacer*3;
+  border-top: 1px solid #707070;
+  @include pad{
+    padding-top: $spacer*2;
+  }
+  @include mobile{
+    padding-top: $spacer*1.25;
+    display: block;
+    i{
+      width: 24px;
+      padding: 4px;
+    }
+  }
+  li{
+    display: flex;
+    align-items: center;
+    @include mobile{
+      font-size: $fs8-font;
+      &:last-child{
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin-top: $spacer;
+      }
+    }
+  }
+  a{
+    color: $black;
+    margin: 0 $spacer;
+    display: block;
+    @include pad{
+      margin: 0 $spacer/2;
+    }
+    @include mobile{
+      margin: 0;
+    }
+    &:hover{
+      text-decoration: underline;
+    } 
+  }
+}
