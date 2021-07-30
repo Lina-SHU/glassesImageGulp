@@ -802,7 +802,8 @@ select:focus, input:focus, textarea:focus {
 
 .joint {
   background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/bg.png") no-repeat;
-  background-position: 0 center; }
+  background-position: center;
+  background-size: cover; }
   @media (max-width: 992px) {
     .joint {
       padding-top: 40px;
