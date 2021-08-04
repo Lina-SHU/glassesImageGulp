@@ -1389,12 +1389,11 @@ select:focus, input:focus, textarea:focus {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 60px;
-    height: 400px;
-    overflow: hidden; }
+    height: 400px; }
     @media (max-width: 992px) {
       .blogList li {
-        height: 208px;
-        margin-bottom: 24px; } }
+        margin-bottom: 24px;
+        height: 208px; } }
     @media (max-width: 767px) {
       .blogList li {
         -ms-flex-wrap: wrap;
@@ -1415,7 +1414,11 @@ select:focus, input:focus, textarea:focus {
     .blogList .blog-img img {
       width: 100%;
       -o-object-fit: cover;
-         object-fit: cover; }
+         object-fit: cover;
+      height: 400px; }
+      @media (max-width: 992px) {
+        .blogList .blog-img img {
+          height: 208px; } }
       @media (max-width: 767px) {
         .blogList .blog-img img {
           height: 217px; } }
