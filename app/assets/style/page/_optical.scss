@@ -1,6 +1,7 @@
 .productMenu{
   display: flex;
-  li{
+  a{
+    display: block;
     width: 33.3333%;
     text-align: center;
     &:first-child{

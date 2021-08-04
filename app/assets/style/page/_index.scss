@@ -21,19 +21,20 @@
 .title{
   color: $primary-dark;
   text-align: end;
-  @include pad{
-    h2{
+  h2{
+    @include pad{
       font-size: $fs3-font;
     }
-    p{
-      font-size: $fs7-font;
-    }
-  }
-  @include mobile{
-    h2{
+    @include mobile{
       font-size: $fs5-font;
     }
-    p{
+  }
+  p{
+    font-weight: normal;
+    @include pad{
+      font-size: $fs7-font;
+    }
+    @include mobile{
       font-size: $font-base;
     }
   }
@@ -51,7 +52,7 @@
     padding-bottom: $spacer;
     margin-bottom: $spacer*4;
   }
-  h3{
+  h2{
     color: $primary-dark;
     @include pad{
       font-size: $fs5-font;
@@ -91,7 +92,7 @@
 }
 
 .classic{
-  h3{
+  h2{
     margin-bottom: $spacer*5;
     color: $primary-dark;
     @include pad{
@@ -180,7 +181,7 @@
     padding-bottom: $spacer*3;
     margin-bottom: $spacer*4;
   }
-  h3{
+  h2{
     color: $white;
     @include pad{
       font-size: $fs5-font;
@@ -220,7 +221,7 @@
   @include pad{
     margin-bottom: $spacer*3;
   }
-  h3{
+  h2{
     color: $primary-dark;
     @include pad{
       font-size: $fs5-font;
@@ -254,6 +255,7 @@
     img{
       border-radius: 4px 4px 0 0;
       width: 100%;
+      object-fit: cover;
     }
   }
   .recommand-content{
@@ -287,7 +289,7 @@
     padding-top: $spacer*3.75;
     padding-bottom: $spacer*5;
   }
-  h3{
+  h2{
     @include pad{
       font-size: $fs5-font;
       margin-bottom: $spacer*3;
