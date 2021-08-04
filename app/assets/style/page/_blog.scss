@@ -77,10 +77,9 @@
     align-items: center;
     margin-bottom: $spacer*7.5;
     height: 400px;
-    overflow: hidden;
     @include pad{
-      height: 208px;
       margin-bottom: $spacer*3;
+      height: 208px;
     }
     @include mobile{
       flex-wrap: wrap;
@@ -103,6 +102,10 @@
     img{
       width: 100%;
       object-fit: cover;
+      height: 400px;
+      @include pad{
+        height: 208px;
+      }
       @include mobile{
         height: 217px;
       }
